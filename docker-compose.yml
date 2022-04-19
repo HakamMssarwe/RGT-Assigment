@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    ports: 
+    - "8000:80"
+    links:
+    - redis:redis
+  redis:
+    image: "redis:alpine"
+  
+
+
+ 

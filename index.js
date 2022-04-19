@@ -6,7 +6,7 @@ import {worker as multiplyWorker} from "./src/workers/multiply.worker.js";
 import {worker as randomGeneratorWorker} from "./src/workers/randomGenerator.worker.js";
 
 const app = express();
-const port = 8000;
+const port = 80;
 
 //Middlewares
 app.use(express.json());
